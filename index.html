@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+<head>
+  <title>Andris Lukjanovics</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="reveal.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li id='about'><a>ABOUT</a></li>
+      <li id='work'><a>WORK</a></li>
+      <li id='contact'><a>CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div id='about_container' class='info-container'>
+     <h1>About</h1>
+     <p>Any content could go in here.</p>
+  </div>
+  <div id="work_container" class="info-container">
+     <h1>Work</h1>
+     <p>Any content could go in here.</p>
+  </div>
+  <div id="contact_container" class='info-container'>
+     <ul id="contact-list">
+      <li id="send-email"><a><img src="mail.png"></a></li>
+      <li id="git"><a href="http://github.com/andris310" target="_blank"><img src="blacktocat.png"></a></li>
+      <li><a href="http://www.linkedin.com/in/andrislukjanovics/" target="_blank"><span class='linkedin-icon'></span></a></li>
+      <li><span class='google-icon'></span></li>
+     </ul>
+     <div id="email" class="email-container">
+      <form id="contact" method="post" action="">
+        <fieldset>
+
+          <label for="name">Name</label>
+          <input id="name-field" type="text" name="name">
+
+          <label for="email">E-mail</label>
+          <input id="email-field" type="email" name="email">
+
+          <label for="message">Question/Comment</label>
+          <textarea name="message"></textarea>
+
+          <input class="submit" type="submit" name="submit" value="Send">
+          <input type="hidden" name="email_To" value="andris310@gmail.com">
+          <input type="hidden" name="email_Redirect" value="">
+        </fieldset>
+      </form>
+
+     </div>
+  </div>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.reveal.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>
