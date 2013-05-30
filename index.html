@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div id="main-title">
+    <span>Andris Lukjanovics</span>
+  </div>
   <nav>
     <ul>
       <li id='about'><a>ABOUT</a></li>
@@ -21,17 +24,58 @@
      <h1>About</h1>
      <p>Any content could go in here.</p>
   </div>
+
   <div id="work_container" class="info-container">
-     <h1>Work</h1>
-     <p>Any content could go in here.</p>
+    <div id="goodfood">
+      <div id='goodfood-iphone'>
+       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfoodiphonesmall.png"></a>
+      </div>
+      <div id='goodfood-desktop'>
+       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfooddesk.png"></a>
+      </div>
+      <div class="work-text">
+        <p><a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><b>Good Food</b></a> - web application that helps you to find Good Food near you. It uses your location and narrows down results that have four or more stars on Yelp and Google. It is built for phones using jQuery Mobile and Ruby on Rails, Yelp and Google Places APIs Works just as fine in the desktop browsers. </p>
+      </div>
+    </div>
+    <hr/>
+
+    <div id="walert">
+      <div id='walert-desktop1'>
+        <a href="#" data-reveal-id="myModal"><img src="walert1.jpg"></a>
+      </div>
+
+      <div id="myModal" class="reveal-modal xlarge">
+        <img src="walert1.jpg">
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+      <div id='walert-desktop2'>
+        <a href="#" data-reveal-id="myModal"><img src="walert2.jpg"></a>
+      </div>
+
+      <div id="myModal" class="reveal-modal xlarge">
+        <img src="walert2.jpg">
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div class="work-text">
+        <p><b>Walert</b> - Web application that helps set up weather alerts. It will send you text messages based on the parameters you choose at a specific time of day. Built using Ruby on Rails with weahter and Twilio APIs</p>
+    </div>
+    </div>
+
   </div>
+
+  <div>
+
+  </div>
+
   <div id="contact_container" class='info-container'>
      <ul id="contact-list">
       <li id="send-email"><a><img src="mail.png"></a></li>
       <li id="git"><a href="http://github.com/andris310" target="_blank"><img src="blacktocat.png"></a></li>
       <li><a href="http://www.linkedin.com/in/andrislukjanovics/" target="_blank"><span class='linkedin-icon'></span></a></li>
-      <li><span class='google-icon'></span></li>
+      <li><span class='facebook-icon'></span></li>
      </ul>
+
      <div id="email" class="email-container">
       <form id="contact" method="post" action="">
         <fieldset>

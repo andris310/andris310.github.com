@@ -6,8 +6,8 @@
 		position: fixed;
 		height: 100%;
 		width: 100%;
-		/*background: #000;
-		background: rgba(0,0,0,.8);*/
+		background: #000;
+		background: rgba(0,0,0,.8);
 		z-index: 100;
 		display: none;
 		top: 0;
@@ -23,12 +23,15 @@
 		background: #fff url(modal-gloss.png) no-repeat -200px -80px;
 		position: absolute;
 		z-index: 101;
-		padding: 30px 40px 34px;
+		padding: 1em 1.5em 1em;
 		-webkit-box-shadow: 0px 2px 4px #DADADA;
   	-moz-box-shadow: 0px 2px 4px #DADADA;
   	box-shadow: 0px 2px 4px #DADADA;
 		}
 
+		#myModal img {
+			width: 100%;
+		}
 
 
 	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}

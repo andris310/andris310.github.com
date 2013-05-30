@@ -2,6 +2,31 @@ body {
   background-color: #fafafa;
 }
 
+/*#main-title {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+#main-title span {
+  color: #4A4E72;
+  /*position: absolute;*/
+  font-size: 2.3em;
+/*  top: 43%;*/
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main-title {
+  height: 5em;
+  width: 50em;
+  background-color: white;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 2px 4px #DADADA;
+}
+
 nav {
   z-index: 200;
   height: 5em;
@@ -68,6 +93,40 @@ h1 {
   font-weight: 300;
 }
 
+/* ------ Work ----------*/
+
+hr {
+  margin: 7% 0 10% 0;
+  border-top: 2px solid #E9E9E9;
+}
+
+#goodfood-iphone img {
+  margin-left: 7%;
+  height: 20em;
+  float: left;
+}
+
+#goodfood-desktop img {
+  height: 19em;
+  margin-left: 9%;
+}
+
+.work-text {
+  color: #575757;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+#walert-desktop1 img {
+  float: left;
+}
+
+#walert-desktop1 img, #walert-desktop2 img {
+  width: 47%;
+  margin-left: 2%;
+}
+
 
 /* ------ Contact -------*/
 
@@ -83,15 +142,15 @@ ul#contact-list {
   margin-right: 2em;
 }
 
-.google-icon {
-  background: url(googlep.svg);
+.facebook-icon {
+  background: url(facebook.svg);
 }
 
 .linkedin-icon {
   background: url(linkedin.svg);
 }
 
-.google-icon, .linkedin-icon {
+.facebook-icon, .linkedin-icon {
   display: block;
   width: 3.1em;
   height: 3.1em;
@@ -104,6 +163,10 @@ ul#contact-list {
 
 #send-email img {
   cursor: pointer;
+}
+
+#send-email img, #git img, .linkedin-icon, .facebook-icon {
+  opacity: .8;
 }
 
 fieldset {
@@ -169,5 +232,76 @@ input.submit {
   transition-duration: 0.4s;
 }
 
+/* ------ Slider ------*/
 
+#carousel {
+  width: 600px;
+  height: 400px;
+  background-color: #2E2E2E;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 3px 12px #808080;
+}
+
+h1 {
+  width: 550px;
+  margin: 20px auto;
+  color: #6B89A5;
+  font-family: Arial;
+
+}
+
+#slider img {
+  float: left;
+}
+
+#controls {
+  margin: auto;
+  width: 120px;
+  margin-top: 10px;
+}
+
+/*img#image {
+  opacity: 1;
+}*/
+
+#previous, #next {
+  position: absolute;
+top: 45%;
+left: 10px;
+width: 40px;
+height: 40px;
+margin-top: -20px;
+font-size: 50px;
+font-weight: 100;
+line-height: 30px;
+color: #FFF;
+text-align: center;
+background: #222;
+border: 2px solid #FFF;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+opacity: 0.1;
+z-index: 100;
+cursor: hand; cursor: pointer;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#previous:hover, #next:hover {
+  opacity: 0.6;
+}
+
+#previous:hover, #next:hover, #previous, #next {
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#next {
+  right: 15px;
+  left: auto;
+}
 
