@@ -18,39 +18,42 @@ body {
 }
 
 #main-title {
-  height: 5em;
   width: 50em;
-  background-color: white;
-  margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0px 2px 4px #DADADA;
 }
 
 nav {
+  margin-top: 20%;
+}
+
+#nav-list {
   z-index: 200;
   height: 5em;
   width: 50em;
   background-color: white;
-  margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0px 2px 4px #DADADA;
-  -moz-box-shadow: 0px 2px 4px #DADADA;
-  box-shadow: 0px 2px 4px #DADADA;
+  -webkit-box-shadow: 0px 2px 3px #DADADA;
+  -moz-box-shadow: 0px 2px 3px #DADADA;
+  box-shadow: 0px 2px 3px #DADADA;
 }
 
+
 nav ul {
+  margin: auto;
+  width: 72%;
+  margin-top: 0;
+  padding-left: 2em;
   padding-top: .5em;
   list-style: none;
-  padding-left: 7em;
 }
 
 nav li {
   display: inline;
   margin-right: 2em;
   margin-right: 1.2em;
-  font-size: 2.7em;
+  font-size: 2.5em;
   color: #3A3A3A;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
@@ -62,14 +65,18 @@ nav li:hover {
 
 a {
   text-decoration: none;
-  color: #3A3A3A;
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  color: #555;
 }
 
 a:hover {
   color: #26B6FA;
+}
+
+a:active {
+  color: #26B6FA;
+}
+
+a, a:hover, a:active {
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -79,6 +86,7 @@ a:hover {
   display: none;
   width: 45em;
   margin-top: .6em;
+  margin-bottom: 4em;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +124,9 @@ hr {
   font-weight: 300;
   font-size: 1.2em;
   margin-top: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: justify;
 }
 
 #walert-desktop1 img {
@@ -127,6 +138,11 @@ hr {
   margin-left: 2%;
 }
 
+.desktop-img img {
+  -webkit-box-shadow: 0px 2px 3px #B9B9B9;
+  -moz-box-shadow: 0px 2px 3px #B9B9B9;
+  box-shadow: 0px 2px 3px #B9B9B9;
+}
 
 /* ------ Contact -------*/
 
@@ -232,76 +248,72 @@ input.submit {
   transition-duration: 0.4s;
 }
 
-/* ------ Slider ------*/
+/* ------ Reveal Modal ------*/
+/*  --------------------------------------------------
+  Reveal Modals
+  -------------------------------------------------- */
 
-#carousel {
-  width: 600px;
-  height: 400px;
-  background-color: #2E2E2E;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0px 3px 12px #808080;
-}
+  .reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+    }
 
-h1 {
-  width: 550px;
-  margin: 20px auto;
-  color: #6B89A5;
-  font-family: Arial;
+  .reveal-modal {
+    visibility: hidden;
+    top: 10%;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    background: #fff url(modal-gloss.png) no-repeat -200px -80px;
+    position: absolute;
+    z-index: 101;
+    padding: 1em 1.5em 1em;
+    -webkit-box-shadow: 0px 2px 4px #DADADA;
+    -moz-box-shadow: 0px 2px 4px #DADADA;
+    box-shadow: 0px 2px 4px #DADADA;
+    }
 
-}
+    #myModal img {
+      width: 100%;
+    }
 
-#slider img {
-  float: left;
-}
 
-#controls {
-  margin: auto;
-  width: 120px;
-  margin-top: 10px;
-}
+  .reveal-modal.small     { width: 200px; margin-left: -140px;}
+  .reveal-modal.medium    { width: 400px; margin-left: -240px;}
+  .reveal-modal.large     { width: 600px; margin-left: -340px;}
+  .reveal-modal.xlarge    { width: 45em; margin-left: -25em;}
 
-/*img#image {
-  opacity: 1;
-}*/
+  .reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+    }
+  /*
 
-#previous, #next {
-  position: absolute;
-top: 45%;
-left: 10px;
-width: 40px;
-height: 40px;
-margin-top: -20px;
-font-size: 50px;
-font-weight: 100;
-line-height: 30px;
-color: #FFF;
-text-align: center;
-background: #222;
-border: 2px solid #FFF;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-opacity: 0.1;
-z-index: 100;
-cursor: hand; cursor: pointer;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+  NOTES
 
-#previous:hover, #next:hover {
-  opacity: 0.6;
-}
+  Close button entity is &#215;
 
-#previous:hover, #next:hover, #previous, #next {
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
+  Example markup
 
-#next {
-  right: 15px;
-  left: auto;
-}
+  <div id="myModal" class="reveal-modal">
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch.  I it's mine.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
 
+  */

@@ -3,13 +3,24 @@
 <head>
   <title>Andris Lukjanovics</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="reveal.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-  <div id="main-title">
+  <nav>
+    <div id="main-title">
+      <span>Andris Lukjanovics</span>
+    </div>
+    <div id="nav-list">
+      <ul>
+        <li id='work'><a>WORK</a></li>
+        <li id='contact'><a>CONTACT</a></li>
+        <li id='about'><a>ABOUT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div id="main-title">
     <span>Andris Lukjanovics</span>
   </div>
   <nav>
@@ -18,7 +29,7 @@
       <li id='work'><a>WORK</a></li>
       <li id='contact'><a>CONTACT</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <div id='about_container' class='info-container'>
      <h1>About</h1>
@@ -30,8 +41,8 @@
       <div id='goodfood-iphone'>
        <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfoodiphonesmall.png"></a>
       </div>
-      <div id='goodfood-desktop'>
-       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfooddesk.png"></a>
+      <div id='goodfood-desktop' class="desktop-img">
+       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfooddesk.jpg"></a>
       </div>
       <div class="work-text">
         <p><a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><b>Good Food</b></a> - web application that helps you to find Good Food near you. It uses your location and narrows down results that have four or more stars on Yelp and Google. It is built for phones using jQuery Mobile and Ruby on Rails, Yelp and Google Places APIs Works just as fine in the desktop browsers. </p>
@@ -40,20 +51,20 @@
     <hr/>
 
     <div id="walert">
-      <div id='walert-desktop1'>
+      <div id='walert-desktop1' class="desktop-img">
         <a href="#" data-reveal-id="myModal"><img src="walert1.jpg"></a>
       </div>
 
-      <div id="myModal" class="reveal-modal xlarge">
+      <div id="myModal" class="reveal-modal xlarge desktop-img">
         <img src="walert1.jpg">
         <a class="close-reveal-modal">&#215;</a>
       </div>
 
-      <div id='walert-desktop2'>
+      <div id='walert-desktop2' class="desktop-img">
         <a href="#" data-reveal-id="myModal"><img src="walert2.jpg"></a>
       </div>
 
-      <div id="myModal" class="reveal-modal xlarge">
+      <div id="myModal" class="reveal-modal xlarge desktop-img">
         <img src="walert2.jpg">
         <a class="close-reveal-modal">&#215;</a>
       </div>
