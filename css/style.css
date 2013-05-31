@@ -30,8 +30,8 @@ nav {
 
 #nav-list {
   z-index: 200;
-  height: 5em;
-  width: 50em;
+  min-height: 5em;
+  max-width: 50em;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +43,7 @@ nav {
 
 nav ul {
   margin: auto;
-  width: 72%;
+  max-width: 36em;
   margin-top: 0;
   padding-left: 2em;
   padding-top: .5em;
@@ -85,7 +85,7 @@ a, a:hover, a:active {
 
 .info-container {
   display: none;
-  width: 45em;
+  max-width: 45em;
   margin-top: .6em;
   margin-bottom: 4em;
   background-color: white;
@@ -102,7 +102,9 @@ h1 {
   font-weight: 300;
 }
 
-/* ------ Work ----------*/
+/*  --------------------------------------------------
+                  Work Page
+  -------------------------------------------------- */
 
 hr {
   margin: 7% 0 10% 0;
@@ -110,13 +112,13 @@ hr {
 }
 
 #goodfood-iphone img {
-  margin-left: 7%;
-  height: 20em;
+  margin-left: 4%;
+  width: 22%;
   float: left;
 }
 
 #goodfood-desktop img {
-  height: 19em;
+  width: 60%;
   margin-left: 9%;
 }
 
@@ -145,7 +147,9 @@ hr {
   box-shadow: 0px 2px 3px #B9B9B9;
 }
 
-/* ------ Contact -------*/
+/*  --------------------------------------------------
+                  Contact Page
+  -------------------------------------------------- */
 
 ul#contact-list {
   list-style: none;
@@ -184,6 +188,19 @@ ul#contact-list {
 
 #send-email img, #git img, .linkedin-icon, .facebook-icon {
   opacity: .8;
+}
+
+#nameinput {
+  width: 20em;
+  float: left;
+}
+
+input#name-field {
+  width: 18em;
+}
+
+#emailinput {
+  width: 20em;
 }
 
 fieldset {
@@ -249,9 +266,96 @@ input.submit {
   transition-duration: 0.4s;
 }
 
-/* ------ Reveal Modal ------*/
 /*  --------------------------------------------------
-  Reveal Modals
+                  Media Queries
+  -------------------------------------------------- */
+
+@media screen
+and (max-width: 740px){
+
+  #goodfood-desktop img {
+
+  }
+}
+
+
+@media screen
+and (max-width:620px) {
+
+  nav li {
+    font-size: 2em;
+  }
+
+  nav ul {
+    max-width: 28.7em;
+  }
+
+  #nav-list {
+    min-height: 4em;
+  }
+
+  .info-container {
+    padding: 1em 0.5em 2em;
+  }
+
+}
+@media screen
+and (max-width: 560px) {
+
+  #walert-desktop1 img, #walert-desktop2 img {
+    width: 96%;
+    margin-bottom: 1em;
+    margin-left: 2%;
+    float: none;
+  }
+}
+
+@media screen
+and (max-width: 510px) {
+  nav li {
+    font-size: 1.6em;
+  }
+
+  nav ul {
+    max-width: 23.7em;
+  }
+
+  #nav-list {
+    min-height: 3.5em;
+  }
+
+  #main-title span {
+    font-size: 1.7em;
+  }
+
+  #goodfood-iphone img {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  #goodfood-desktop img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+@media screen
+and (max-width: 420px){
+
+  nav li {
+    font-size: 1.4em;
+  }
+
+  nav ul {
+    max-width: 20.2em;
+  }
+
+}
+
+
+/*  --------------------------------------------------
+                  Reveal Modals
   -------------------------------------------------- */
 
   .reveal-modal-bg {

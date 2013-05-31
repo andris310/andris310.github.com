@@ -1,11 +1,10 @@
 $(document).ready(function(){
-
-  $('nav').fadeIn(500);
+  $('nav').css({'display': 'none'})
+  $('nav').fadeIn(1000);
 
   $('nav li').on('click', function(){
-    // $('#main-title').animate({'top': '33%'}, 100);
     $('#main-title').fadeOut(100);
-    $('nav').animate({'margin-top': '2%'}, 200);
+    $('nav').animate({'margin-top': '2%'}, 1100, 'easeOutElastic');
   });
 
   $('#contact').on('click', function(){

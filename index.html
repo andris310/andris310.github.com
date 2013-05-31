@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Andris Lukjanovics</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 
 </head>
@@ -20,29 +20,18 @@
       </ul>
     </div>
   </nav>
-  <!-- <div id="main-title">
-    <span>Andris Lukjanovics</span>
-  </div>
-  <nav>
-    <ul>
-      <li id='about'><a>ABOUT</a></li>
-      <li id='work'><a>WORK</a></li>
-      <li id='contact'><a>CONTACT</a></li>
-    </ul>
-  </nav> -->
 
   <div id='about_container' class='info-container'>
-     <h1>About</h1>
-     <p>Any content could go in here.</p>
+     <p>I'm a full stack web developer based in San Francisco. I was a student at General Assembly's Web Development Imersive (WDI) 2013 March course, where for 12 weeks with 10+ hour days we dived in Ruby, Ruby on Rails and JavaScript.<br>Before I 'found code', I worked in photography as a digital technician and 1st assistant for Los Angeles based photographer <a href="http://kevinlynchstudios.com/"><b>Kevin Lynch</b></a>.<br>While I'm not practicing coding I enjoy mountainbiking, road trips, good food (occasionally cook it myself) and movies. </p>
   </div>
 
   <div id="work_container" class="info-container">
     <div id="goodfood">
       <div id='goodfood-iphone'>
-       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfoodiphonesmall.png"></a>
+       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="images/goodfoodiphonesmall.jpg"></a>
       </div>
       <div id='goodfood-desktop' class="desktop-img">
-       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="goodfooddesk.jpg"></a>
+       <a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><img src="images/goodfooddesk.jpg"></a>
       </div>
       <div class="work-text">
         <p><a href="http://goodfoodwdi.herokuapp.com/" target="_blank"><b>Good Food</b></a> - web application that helps you to find Good Food near you. It uses your location and narrows down results that have four or more stars on Yelp and Google. It is built for phones using jQuery Mobile and Ruby on Rails, Yelp and Google Places APIs Works just as fine in the desktop browsers. </p>
@@ -52,20 +41,20 @@
 
     <div id="walert">
       <div id='walert-desktop1' class="desktop-img">
-        <a href="#" data-reveal-id="myModal"><img src="walert1.jpg"></a>
+        <a href="#" data-reveal-id="myModal"><img src="images/walert1.jpg"></a>
       </div>
 
       <div id="myModal" class="reveal-modal xlarge desktop-img">
-        <img src="walert1.jpg">
+        <img src="images/walert1.jpg">
         <a class="close-reveal-modal">&#215;</a>
       </div>
 
       <div id='walert-desktop2' class="desktop-img">
-        <a href="#" data-reveal-id="myModal"><img src="walert2.jpg"></a>
+        <a href="#" data-reveal-id="myModal"><img src="images/walert2.jpg"></a>
       </div>
 
       <div id="myModal" class="reveal-modal xlarge desktop-img">
-        <img src="walert2.jpg">
+        <img src="images/walert2.jpg">
         <a class="close-reveal-modal">&#215;</a>
       </div>
       <div class="work-text">
@@ -81,24 +70,37 @@
 
   <div id="contact_container" class='info-container'>
      <ul id="contact-list">
-      <li id="send-email"><a><img src="mail.png"></a></li>
-      <li id="git"><a href="http://github.com/andris310" target="_blank"><img src="blacktocat.png"></a></li>
-      <li><a href="http://www.linkedin.com/in/andrislukjanovics/" target="_blank"><span class='linkedin-icon'></span></a></li>
-      <li><span class='facebook-icon'></span></li>
+      <li id="send-email">
+        <a><img src="images/mail.png"></a>
+      </li>
+      <li id="git">
+        <a href="http://github.com/andris310" target="_blank"><img src="images/blacktocat.png"></a>
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/in/andrislukjanovics/" target="_blank"><span class='linkedin-icon'></span></a>
+      </li>
+      <li>
+        <span class='facebook-icon'></span>
+      </li>
      </ul>
 
      <div id="email" class="email-container">
       <form id="contact" method="post" action="">
         <fieldset>
+          <div id="nameinput">
+            <label for="name">Name</label>
+            <input id="name-field" type="text" name="name">
+          </div>
 
-          <label for="name">Name</label>
-          <input id="name-field" type="text" name="name">
+          <div id="emailinput">
+            <label for="email">E-mail</label>
+            <input id="email-field" type="email" name="email">
+          </div>
 
-          <label for="email">E-mail</label>
-          <input id="email-field" type="email" name="email">
-
-          <label for="message">Question/Comment</label>
-          <textarea name="message"></textarea>
+          <div id="messageinput">
+            <label for="message">Question/Comment</label>
+            <textarea name="message"></textarea>
+          </div>
 
           <input class="submit" type="submit" name="submit" value="Send">
           <input type="hidden" name="email_To" value="andris310@gmail.com">
@@ -111,6 +113,7 @@
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript" src="jquery.reveal.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
 
