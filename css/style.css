@@ -195,11 +195,13 @@ ul#contact-list {
   float: left;
 }
 
+
 input#name-field {
   width: 18em;
 }
 
 #emailinput {
+  float: left;
   width: 20em;
 }
 
@@ -225,8 +227,11 @@ textarea {
 #name-field, #email-field {
   margin-right: 3em;
   margin-bottom: 2em;
-  width: 35%;
   height: 3em;
+}
+
+#email-field {
+  width: 18em;
 }
 
 input#submit {
@@ -266,6 +271,30 @@ input.submit {
   transition-duration: 0.4s;
 }
 
+
+#about_container img {
+  width: 30%;
+  float: left;
+  margin: 0 3% 1% 0;
+  padding: 6px;
+  border: 1px solid #DADADA;
+  -webkit-box-shadow: 0px 2px 3px #DADADA;
+  -moz-box-shadow: 0px 2px 3px #DADADA;
+  box-shadow: 0px 2px 3px #C4C4C4;
+}
+
+#about_container p {
+  text-align: justify;
+  color: #333;
+  font-weight: 300;
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#space {
+  clear: both;
+  float: left;
+}
 /*  --------------------------------------------------
                   Media Queries
   -------------------------------------------------- */
