@@ -303,15 +303,88 @@ input.submit {
   clear: both;
   float: left;
 }
+
+
+
+/*  --------------------------------------------------
+                  Reveal Modals
+  -------------------------------------------------- */
+
+  .reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+    }
+
+  .reveal-modal {
+    visibility: hidden;
+    top: 10%;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    background: #fff url(modal-gloss.png) no-repeat -200px -80px;
+    position: absolute;
+    z-index: 101;
+    padding: .4em;
+    -webkit-box-shadow: 0px 2px 4px #DADADA;
+    -moz-box-shadow: 0px 2px 4px #DADADA;
+    box-shadow: 0px 2px 4px #DADADA;
+    }
+
+    .xlarge.desktop-img img {
+      width: 100%;
+    }
+
+
+  .reveal-modal.small     { width: 200px; margin-left: -140px;}
+  .reveal-modal.medium    { width: 400px; margin-left: -240px;}
+  .reveal-modal.large     { width: 600px; margin-left: -340px;}
+  .reveal-modal.xlarge    { width: 67%; margin-left: -35%;}
+
+  .reveal-modal .close-reveal-modal {
+    font-size: 1.7em;
+    line-height: .5;
+    position: absolute;
+    top: -18px;
+    right: -8px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+    }
+  /*
+
+  NOTES
+
+  Close button entity is &#215;
+
+  Example markup
+
+  <div id="myModal" class="reveal-modal">
+    <h2>Awesome. I have it.</h2>
+    <p class="lead">Your couch.  I it's mine.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  */
+
 /*  --------------------------------------------------
                   Media Queries
   -------------------------------------------------- */
 
 @media screen
-and (max-width: 740px){
+and (max-width: 730px){
 
-  #goodfood-desktop img {
-
+  .reveal-modal.xlarge {
+    width: 84%;
+    margin-left: -45%;
   }
 }
 
@@ -349,6 +422,11 @@ and (max-width: 560px) {
 
 @media screen
 and (max-width: 510px) {
+
+  nav {
+    margin-top: 30%;
+  }
+
   nav li {
     font-size: 1.6em;
   }
@@ -375,6 +453,21 @@ and (max-width: 510px) {
     margin-left: 0;
   }
 
+  .reveal-modal.xlarge {
+    width: 95%;
+    margin-left: -49%;
+  }
+
+  .reveal-modal {
+    padding: .4em .4em .4em;
+  }
+
+  .reveal-modal .close-reveal-modal {
+    top: -15px;
+    right: 0px;
+    color: #CECECE;
+  }
+
 }
 
 @media screen
@@ -390,72 +483,23 @@ and (max-width: 420px){
 
 }
 
+@media screen
+and (max-width: 400px){
 
-/*  --------------------------------------------------
-                  Reveal Modals
-  -------------------------------------------------- */
+  nav {
+    margin-top: 45%;
+  }
 
-  .reveal-modal-bg {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    background: rgba(0,0,0,.8);
-    z-index: 100;
-    display: none;
-    top: 0;
-    left: 0;
+  nav li {
+    font-size: 2.8em;
+    text-align: center;
     }
 
-  .reveal-modal {
-    visibility: hidden;
-    top: 10%;
-    left: 50%;
-    margin-left: -300px;
-    width: 520px;
-    background: #fff url(modal-gloss.png) no-repeat -200px -80px;
-    position: absolute;
-    z-index: 101;
-    padding: 1em 1.5em 1em;
-    -webkit-box-shadow: 0px 2px 4px #DADADA;
-    -moz-box-shadow: 0px 2px 4px #DADADA;
-    box-shadow: 0px 2px 4px #DADADA;
+  #contact-list li {
+    margin-right: 1em;
     }
 
-    #myModal img {
-      width: 100%;
-    }
-
-
-  .reveal-modal.small     { width: 200px; margin-left: -140px;}
-  .reveal-modal.medium    { width: 400px; margin-left: -240px;}
-  .reveal-modal.large     { width: 600px; margin-left: -340px;}
-  .reveal-modal.xlarge    { width: 45em; margin-left: -25em;}
-
-  .reveal-modal .close-reveal-modal {
-    font-size: 22px;
-    line-height: .5;
-    position: absolute;
-    top: 8px;
-    right: 11px;
-    color: #aaa;
-    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-    font-weight: bold;
-    cursor: pointer;
-    }
-  /*
-
-  NOTES
-
-  Close button entity is &#215;
-
-  Example markup
-
-  <div id="myModal" class="reveal-modal">
-    <h2>Awesome. I have it.</h2>
-    <p class="lead">Your couch.  I it's mine.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
-    <a class="close-reveal-modal">&#215;</a>
-  </div>
-
-  */
+  ul#contact-list {
+    width: 17em;
+  }
+  }
