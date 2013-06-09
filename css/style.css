@@ -378,6 +378,13 @@ input.submit {
 /*  --------------------------------------------------
                   Media Queries
   -------------------------------------------------- */
+@media screen
+and (max-width: 790px){
+
+  #main-title {
+    width: 100%;
+  }
+}
 
 @media screen
 and (max-width: 730px){
@@ -481,6 +488,7 @@ and (max-width: 420px){
     max-width: 20.2em;
   }
 
+
 }
 
 @media screen
@@ -490,8 +498,12 @@ and (max-width: 400px){
     margin-top: 45%;
   }
 
+  #main-title span {
+    font-size: 2.3em;
+  }
+
   nav li {
-    font-size: 2.8em;
+    font-size: 2.3em;
     text-align: center;
     }
 
