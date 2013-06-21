@@ -118,6 +118,10 @@ hr {
   border-top: 2px solid #E9E9E9;
 }
 
+#tracker-img img {
+  width: 100%;
+}
+
 #goodfood-iphone img {
   margin-left: 4%;
   width: 22%;
