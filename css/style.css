@@ -170,7 +170,7 @@ ul#contact-list {
   list-style: none;
   padding: 0;
   margin: auto;
-  width: 20.95em;
+  width: 26.95em;
 }
 
 #contact-list li {
@@ -186,11 +186,22 @@ ul#contact-list {
   background: url(../images/linkedin.svg);
 }
 
-.facebook-icon, .linkedin-icon {
+.instagram-icon {
+  background: url(../images/instagram.svg);
+}
+
+.facebook-icon, .linkedin-icon, .instagram-icon {
   display: block;
   width: 3.1em;
   height: 3.1em;
   background-size: 3.1em 3.1em;
+}
+
+.instagram-icon {
+  width: 3.5em;
+  height: 3.45em;
+  opacity: .8;
+  background-size: 3.8em 3.8em;
 }
 
 #git img, #send-email img {
